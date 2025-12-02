@@ -115,6 +115,14 @@ public class S100PermitFile {
         return userPermitString;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
+    public String getDataserver() {
+        return dataserver;
+    }
+
     public void add(String fileName, int edtn, Date permitEndDate, String cryptKey,
             S100ProductSpecification productSpecification) throws GeneralSecurityException {
         add(S100DataPermit.create(fileName, edtn, permitEndDate, cryptKey, hwId,
